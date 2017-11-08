@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A51BFE3-3C8A-4C71-91E9-3D30583CDE40}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LibSYS</RootNamespace>
+    <AssemblyName>LibSYS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBookAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookAnalysis.Designer.cs">
+      <DependentUpon>frmBookAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLateNotice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLateNotice.Designer.cs">
+      <DependentUpon>frmLateNotice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainMenu.Designer.cs">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemAnalysis.Designer.cs">
+      <DependentUpon>frmMemAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOverdue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOverdue.Designer.cs">
+      <DependentUpon>frmOverdue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookReturn.Designer.cs">
+      <DependentUpon>frmBookReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookLoan.Designer.cs">
+      <DependentUpon>frmBookLoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookList.Designer.cs">
+      <DependentUpon>frmBookList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookRemove.Designer.cs">
+      <DependentUpon>frmBookRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookAmend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookAmend.Designer.cs">
+      <DependentUpon>frmBookAmend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookNew.Designer.cs">
+      <DependentUpon>frmBookNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemList.Designer.cs">
+      <DependentUpon>frmMemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemDel.Designer.cs">
+      <DependentUpon>frmMemDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemAm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemAm.Designer.cs">
+      <DependentUpon>frmMemAm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMemReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMemReg.Designer.cs">
+      <DependentUpon>frmMemReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmBookAnalysis.resx">
+      <DependentUpon>frmBookAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookList.resx">
+      <DependentUpon>frmBookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookAmend.resx">
+      <DependentUpon>frmBookAmend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookLoan.resx">
+      <DependentUpon>frmBookLoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookNew.resx">
+      <DependentUpon>frmBookNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookRemove.resx">
+      <DependentUpon>frmBookRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookReturn.resx">
+      <DependentUpon>frmBookReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLateNotice.resx">
+      <DependentUpon>frmLateNotice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemAm.resx">
+      <DependentUpon>frmMemAm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemAnalysis.resx">
+      <DependentUpon>frmMemAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemDel.resx">
+      <DependentUpon>frmMemDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemList.resx">
+      <DependentUpon>frmMemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMemReg.resx">
+      <DependentUpon>frmMemReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOverdue.resx">
+      <DependentUpon>frmOverdue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images2UK70K0T.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesIZJG782P.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagesQFBBFUFC.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
